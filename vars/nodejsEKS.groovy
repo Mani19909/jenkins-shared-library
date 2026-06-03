@@ -92,7 +92,7 @@ def call(Map configMap) {
         post {
             always {
                 echo 'I will always say Hello again!'
-                deleteDir()
+                cleanWs()
             }
             success {
                 echo 'I will run when pipeline is success'
