@@ -4,10 +4,10 @@
 def decidePipeline(Map configMap) {
     type = configMap.get("type")
     switch(type) {
-        case "nodejsEKS" :
+        case "nodejsEKS":
             nodejsEKS(configMap)
         break
-        case "nodejsVM"
+        case "nodejsVM":
             nodejsVM(configMap)
         break
         default:
